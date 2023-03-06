@@ -429,19 +429,38 @@
       </div>
     </footer>
 
-    <div class="backdrob is-hidden" data-modal>
+    <div class="backdrob is-hiddenn" data-modal>
       <div class="modal">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A, voluptatum
-          cumque. Quia incidunt adipisci id illo sequi quibusdam! Aliquam
-          reiciendis reprehenderit aut corrupti necessitatibus iste dolorem
-          illum cum cumque commodi?
-        </p>
         <button class="modal-close" type="button" data-modal-close>
           <svg class="close-icon">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <h2 class="modal-text">
+          Leave your contacts and we will call you back
+        </h2>
+        <form name="conact-form" autocomplete="off" novalidate>
+          <fieldset class="fieldset-modal">
+            <label class="label-modal" for="user-name">Name</label>
+            <input id="user-name" type="text" name="user-name" autofocus />
+
+            <label for="user-phone">Phone</label>
+            <input id="user-phone" type="tel" name="user-phone" />
+
+            <label for="user-email">Email</label>
+            <input id="user-email" type="email" name="user-email" />
+
+            <label for="user-comment">Comment</label>
+            <textarea
+              class="textarea-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </fieldset>
+
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
