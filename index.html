@@ -439,26 +439,58 @@
         <h2 class="modal-text">
           Leave your contacts and we will call you back
         </h2>
-        <form name="conact-form" autocomplete="off" novalidate>
-          <fieldset class="fieldset-modal">
-            <label class="label-modal" for="user-name">Name</label>
-            <input id="user-name" type="text" name="user-name" autofocus />
-
-            <label for="user-phone">Phone</label>
-            <input id="user-phone" type="tel" name="user-phone" />
-
-            <label for="user-email">Email</label>
-            <input id="user-email" type="email" name="user-email" />
-
-            <label for="user-comment">Comment</label>
+        <form
+          class="contact-form"
+          name="conact-form"
+          autocomplete="off"
+          novalidate
+        >
+          <div class="form-field">
+            <label class="modal-label" for="user-name">Name</label>
+            <input
+              class="modal-input"
+              id="user-name"
+              type="text"
+              name="user-name"
+              autofocus
+            />
+            <svg class="modal-icon">
+              <use href="./images/icons.svg#icon-person-black"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label class="modal-label" for="user-phone">Phone</label>
+            <input
+              class="modal-input"
+              id="user-phone"
+              type="tel"
+              name="user-phone"
+            />
+            <svg class="modal-icon">
+              <use href="./images/icons.svg#icon-phone-black-18dp"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label class="modal-label" for="user-email">Email</label>
+            <input
+              class="modal-input"
+              id="user-email"
+              type="email"
+              name="user-email"
+            />
+            <svg class="modal-icon">
+              <use href="./images/icons.svg#icon-email-black-18dp"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label class="modal-label" for="user-comment">Comment</label>
             <textarea
               class="textarea-comment"
               name="user-comment"
               id="user-comment"
               placeholder="Text input"
             ></textarea>
-          </fieldset>
-
+          </div>
           <button type="submit">Send</button>
         </form>
       </div>

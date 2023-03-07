@@ -605,11 +605,6 @@ projects-link:focus {
   fill: var(--white);
 }
 
-.label-modal {
-  display: flex;
-  gap: 8px;
-}
-
 input:focus {
   background-color: var(--modal-bgc);
 }
@@ -627,21 +622,41 @@ textarea:focus {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 0.66;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-top: 48px;
 }
-.fieldset-modal {
-  display: flex;
-  width: 360px;
-  height: 336px;
-  border: none;
+
+.modal-label {
+  display: block;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--customers-icon);
+}
+.modal-input {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 8px;
+  flex-basis: 100%;
+}
+.contact-form {
+  margin-top: 16px;
+}
+.modal-icon {
+  position: absolute;
+  bottom: 19px;
+  left: 19px;
+  width: 18px;
+  height: 24px;
+  fill: var(--navy);
+  transform: translate(-50%, 50%);
 }
