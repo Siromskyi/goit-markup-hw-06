@@ -485,13 +485,27 @@
           <div class="form-field">
             <label class="modal-label" for="user-comment">Comment</label>
             <textarea
-              class="textarea-comment"
+              class="modal-input textarea"
               name="user-comment"
               id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
-          <button type="submit">Send</button>
+          <div class="flex-checkbox">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              id="input-checkbox"
+              name="input-checkbox"
+            />
+            <label class="label-checkbox" for="input-checkbox"
+              >I accept the terms and conditions of the
+              <a href="#">Privacy Policy</a></label
+            >
+          </div>
+          <div class="modal-button">
+            <button class="button-send" type="submit">Send</button>
+          </div>
         </form>
       </div>
     </div>
