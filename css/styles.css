@@ -444,6 +444,56 @@ h6 {
 .container-footer {
   display: flex;
 }
+.subscribe-form {
+  margin-left: 80px;
+}
+
+.form-subscribe {
+  display: flex;
+  gap: 24px;
+}
+.subscribe-label {
+  display: block;
+  margin-bottom: 16px;
+}
+.subscribe-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+}
+
+.subscribe-input:focus {
+  background-color: var(--navy);
+}
+.button-subscribe {
+  width: 165px;
+  height: 40px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  background: #4d5ae5;
+  border-radius: 4px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.subscribe-icon {
+  fill: var(--white);
+  width: 24px;
+  height: 24px;
+}
 
 /*portfolio*/
 
@@ -719,7 +769,7 @@ projects-link:focus {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white);
 }
