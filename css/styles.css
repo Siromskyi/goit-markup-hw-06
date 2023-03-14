@@ -756,6 +756,7 @@ projects-link:focus {
 .label-checkbox {
   position: relative;
   padding-left: 26px;
+  cursor: pointer;
 }
 
 .input-checkbox {
@@ -776,6 +777,7 @@ projects-link:focus {
   height: 16px;
   border: 1.25px solid var(--navy);
   border-radius: 2px;
+  cursor: pointer;
 }
 .modal-button {
   display: flex;
